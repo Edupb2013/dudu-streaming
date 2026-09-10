@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dudu Streaming — Entretenimento em um só lugar</title>
+<meta name="description" content="Dudu Streaming: planos, suporte e soluções para dispositivos compatíveis. Fale pelo WhatsApp.">
+<style>
+:root{--bg:#030711;--panel:#071221;--panel2:#0b1729;--line:#12375d;--blue:#12a9ff;--cyan:#20d5ff;--green:#18d66b;--text:#f5f9ff;--muted:#9fb0c4}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;background:radial-gradient(circle at 80% 0,#08264a 0,transparent 30%),var(--bg);color:var(--text);overflow-x:hidden}
+a{text-decoration:none;color:inherit}.container{width:min(1160px,92%);margin:auto}
+header{position:sticky;top:0;z-index:50;background:#030711df;backdrop-filter:blur(14px);border-bottom:1px solid #0d2843}
+.nav{height:74px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:1000;font-size:25px;letter-spacing:-1px}.brand i{font-style:normal;color:var(--cyan)}.brand small{display:block;color:#79dfff;font-size:9px;letter-spacing:4px;margin-top:-4px}
+nav{display:flex;gap:25px;font-size:14px;color:#dce8f5}nav a:hover{color:var(--cyan)}
+.wa{background:linear-gradient(135deg,#18d66b,#079e49);padding:11px 17px;border-radius:12px;font-weight:900;box-shadow:0 0 24px #18d66b44}
+.hero{padding:42px 0 20px}.hero-art{position:relative;border:1px solid #0d4677;border-radius:24px;overflow:hidden;box-shadow:0 0 60px #008cff18}
+.hero-art img{display:block;width:100%;height:auto}.hero-overlay{position:absolute;inset:auto 0 0;padding:28px;background:linear-gradient(transparent,#030711cc)}
+.hero-overlay h1{font-size:clamp(28px,5vw,54px);line-height:1.02}.hero-overlay p{margin:10px 0;color:#c8d5e5;max-width:620px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 19px;border-radius:11px;font-weight:900;margin-top:8px}.primary{background:linear-gradient(135deg,var(--blue),#006de0);box-shadow:0 0 24px #009dff33}.ghost{border:1px solid #24577f;background:#071221}
+section{padding:68px 0}.section-head{margin-bottom:26px}.section-head h2{font-size:32px}.section-head p{color:var(--muted);margin-top:5px}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.feature{background:linear-gradient(145deg,#0a1829,#06101c);border:1px solid var(--line);padding:22px;border-radius:16px;transition:.25s}.feature:hover{transform:translateY(-5px);border-color:var(--cyan)}.icon{font-size:28px;margin-bottom:12px}.feature b{display:block;margin-bottom:6px}.feature span{font-size:13px;color:var(--muted)}
+.plans{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.plan{background:linear-gradient(160deg,#0b1a2d,#050b14);border:1px solid #165185;border-radius:18px;padding:24px;position:relative;transition:.25s}.plan:hover{transform:translateY(-6px);box-shadow:0 18px 40px #0008}.plan.hot{border-color:var(--cyan);box-shadow:0 0 30px #00aaff18}.ribbon{position:absolute;right:12px;top:12px;background:var(--green);color:#02120a;padding:5px 8px;border-radius:6px;font-size:10px;font-weight:1000}.plan h3{font-size:18px}.price{font-size:34px;font-weight:1000;margin:16px 0}.price small{font-size:12px;color:var(--muted)}ul{list-style:none;color:#c8d5e5;font-size:13px;line-height:2}li::before{content:"✓";color:var(--green);font-weight:bold;margin-right:8px}
+.catalog{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.cat{height:155px;border-radius:16px;overflow:hidden;border:1px solid #153e64;position:relative;background:linear-gradient(135deg,#0c2847,#08111c)}.cat:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent,#000b)}.cat span{position:absolute;bottom:15px;left:15px;font-weight:1000;z-index:2;font-size:18px}
+.devices{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.device{padding:22px 12px;text-align:center;border:1px solid #143b60;background:#071321;border-radius:15px}.device .emoji{font-size:36px}.device b{display:block;margin-top:9px}.device small{color:var(--muted)}
+.cta{border:1px solid #167b50;background:radial-gradient(circle at 20% 20%,#0d432b,#07131b 60%);border-radius:24px;padding:40px;text-align:center}.cta h2{font-size:34px}.cta p{color:#b5c5d5;margin:9px 0 18px}
+footer{border-top:1px solid #0d2843;padding:32px 0;color:#7f91a7;text-align:center;font-size:13px}.footerbrand{font-size:25px;font-weight:1000;color:#eaf6ff;margin-bottom:8px}.footerbrand span{color:var(--cyan)}
+.reveal{animation:rise .7s ease both}.delay{animation-delay:.15s}@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@media(max-width:900px){nav{display:none}.features,.plans{grid-template-columns:repeat(2,1fr)}.devices{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.nav{height:64px}.brand{font-size:21px}.wa{padding:9px 11px;font-size:12px}.hero{padding-top:18px}.hero-overlay{position:relative;padding:20px;background:#071221}.features,.plans,.catalog{grid-template-columns:1fr 1fr}.devices{grid-template-columns:1fr 1fr}.cta{padding:28px 18px}.cta h2{font-size:27px}}
+</style>
+</head>
+<body>
+<header><div class="container nav">
+<div class="brand">▶ <i>Dudu</i> Streaming<small>SEU MUNDO EM UM SÓ APP</small></div>
+<nav><a href="#planos">Planos</a><a href="#servicos">Serviços</a><a href="#catalogo">Catálogo</a><a href="#dispositivos">Dispositivos</a><a href="#contato">Contato</a></nav>
+<a class="wa" href="https://wa.me/5541995162789?text=Olá%20Dudu%20Streaming!%20Quero%20fazer%20um%20pedido." target="_blank">WhatsApp</a>
+</div></header>
+
+<main>
+<section class="container hero reveal">
+<div class="hero-art">
+<img src="banner-dudu-streaming.png" alt="Dudu Streaming — banner promocional">
+<div class="hero-overlay">
+<h1>Tenha seus conteúdos em um só lugar.</h1>
+<p>Planos, aplicativos e suporte para dispositivos compatíveis. Consulte disponibilidade e condições pelo WhatsApp.</p>
+<a class="btn primary" href="https://wa.me/5541995162789?text=Olá!%20Quero%20solicitar%20um%20teste%20e%20conhecer%20as%20opções." target="_blank">Solicitar atendimento →</a>
+</div></div></section>
+
+<section id="servicos"><div class="container">
+<div class="section-head"><h2>Por que escolher a Dudu?</h2><p>Atendimento direto para orientar sua instalação e configuração.</p></div>
+<div class="features">
+<div class="feature"><div class="icon">⚡</div><b>Qualidade</b><span>Consulte as opções disponíveis para seu dispositivo.</span></div>
+<div class="feature"><div class="icon">💬</div><b>Suporte</b><span>Atendimento pelo WhatsApp para dúvidas e orientações.</span></div>
+<div class="feature"><div class="icon">📺</div><b>Vários dispositivos</b><span>Smart TV, TV Box, Fire Stick, celular e computador compatíveis.</span></div>
+<div class="feature"><div class="icon">🔄</div><b>Atualizações</b><span>Consulte serviços de atualização e configuração.</span></div>
+</div></div></section>
+
+<section id="planos"><div class="container">
+<div class="section-head"><h2>Nossos planos</h2><p>Escolha uma opção e fale com a equipe para confirmar disponibilidade.</p></div>
+<div class="plans">
+<article class="plan"><h3>Mensal</h3><div class="price">R$ 35 <small>/mês</small></div><ul><li>Conteúdos disponíveis no serviço</li><li>Filmes e séries</li><li>Canais ao vivo</li><li>Suporte</li></ul><a class="btn primary" href="https://wa.me/5541995162789?text=Quero%20o%20plano%20mensal%20de%20R%24%2035." target="_blank">Assinar</a></article>
+<article class="plan"><h3>Trimestral</h3><div class="price">R$ 85 <small>/3 meses</small></div><ul><li>Conteúdos disponíveis no serviço</li><li>Filmes e séries</li><li>Canais ao vivo</li><li>Suporte</li></ul><a class="btn primary" href="https://wa.me/5541995162789?text=Quero%20o%20plano%20trimestral%20de%20R%24%2085." target="_blank">Assinar</a></article>
+<article class="plan hot"><span class="ribbon">DESTAQUE</span><h3>Semestral</h3><div class="price">R$ 150 <small>/6 meses</small></div><ul><li>Conteúdos disponíveis no serviço</li><li>Filmes e séries</li><li>Canais ao vivo</li><li>Suporte</li></ul><a class="btn primary" href="https://wa.me/5541995162789?text=Quero%20o%20plano%20semestral%20de%20R%24%20150." target="_blank">Assinar</a></article>
+<article class="plan"><h3>Anual</h3><div class="price">R$ 250 <small>/12 meses</small></div><ul><li>Conteúdos disponíveis no serviço</li><li>Filmes e séries</li><li>Canais ao vivo</li><li>Suporte</li></ul><a class="btn primary" href="https://wa.me/5541995162789?text=Quero%20o%20plano%20anual%20de%20R%24%20250." target="_blank">Assinar</a></article>
+</div></div></section>
+
+<section id="catalogo"><div class="container">
+<div class="section-head"><h2>Catálogo</h2><p>Entretenimento para diferentes momentos.</p></div>
+<div class="catalog">
+<div class="cat"><span>🎬 Filmes</span></div><div class="cat"><span>📺 Séries</span></div><div class="cat"><span>📡 Canais ao vivo</span></div><div class="cat"><span>⚽ Esportes</span></div><div class="cat"><span>🎨 Desenhos</span></div><div class="cat"><span>🌎 Documentários</span></div><div class="cat"><span>🧸 Infantil</span></div><div class="cat"><span>✨ E muito mais</span></div>
+</div></div></section>
+
+<section id="dispositivos"><div class="container">
+<div class="section-head"><h2>Dispositivos compatíveis</h2><p>Confirme a compatibilidade do seu aparelho antes da contratação.</p></div>
+<div class="devices">
+<div class="device"><div class="emoji">📺</div><b>Smart TV</b><small>Android, LG, Samsung e outras</small></div>
+<div class="device"><div class="emoji">📦</div><b>TV Box</b><small>Android / MXQ e similares</small></div>
+<div class="device"><div class="emoji">📡</div><b>Fire Stick</b><small>Consulte modelos</small></div>
+<div class="device"><div class="emoji">📱</div><b>Celular</b><small>Android / iPhone</small></div>
+<div class="device"><div class="emoji">💻</div><b>Computador</b><small>Windows / Mac</small></div>
+</div></div></section>
+
+<section id="contato"><div class="container"><div class="cta">
+<h2>Faça seu pedido agora!</h2><p>Fale com a Dudu Streaming para conhecer as opções, preços e compatibilidade.</p>
+<a class="btn wa" href="https://wa.me/5541995162789?text=Olá%20Dudu%20Streaming!%20Quero%20fazer%20meu%20pedido." target="_blank">📲 (41) 99516-2789</a>
+</div></div></section>
+</main>
+
+<footer><div class="footerbrand">▶ <span>Dudu</span> Streaming</div>Qualidade, variedade e atendimento.<br><br>© 2026 Dudu Streaming. Todos os direitos reservados.</footer>
+</body>
+</html>
